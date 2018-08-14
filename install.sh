@@ -1,7 +1,7 @@
 # approximates the environment that nodejs-mobile gradle task uses to rebuild native modules for android
 # but in a standalone, source-able script for faster feedback
 
-mmmmm="$HOME/projects/test/noble-hingy/"
+mmmmm="$HOME/projects/test/node-hingy/"
 host_os=linux
 export TOOLCHAIN="/home/happy0/uwotm80pal"
 
