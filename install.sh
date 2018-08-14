@@ -17,7 +17,7 @@ export AR="$TOOLCHAIN"/bin/aarch64-linux-android-ar
 
 export GYP_DEFINES="target_arch=arm64 v8_target_arch=arm64 android_target_arch=arm64 host_os=$host_os OS=android"
 
-export npm_config_arch=arm
+export npm_config_arch=arm64
 export npm_config_platform=android
 export npm_config_format=make-android
 export npm_config_nodedir=/home/happy0/nodejs-mobile-android
