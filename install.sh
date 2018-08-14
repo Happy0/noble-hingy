@@ -3,22 +3,22 @@
 
 mmmmm="$HOME/projects/test/noble-hingy/"
 host_os=linux
-export TOOLCHAIN="/home/happy0/projects/mmmmm-mobile/android/build/standalone-toolchains/arm-linux-androideabi"
+export TOOLCHAIN="/home/happy0/uwotm80pal"
 
-export CC="$TOOLCHAIN"/bin/arm-linux-androideabi-clang
-export CXX="$TOOLCHAIN"/bin/arm-linux-androideabi-clang++
+export CC="$TOOLCHAIN"/bin/aarch64-linux-android-clang
+export CXX="$TOOLCHAIN"/bin/aarch64-linux-android-clang++
 # Normally LINK would be set to a linker like "ld"...
 # but the nodejs-mobile Gradle scripts put a compiler there
 # and indeed at least one of the gyp configs sends some
 # compiler flags to the "linker", which a pure linker would
 # complain about.
-export LINK="$TOOLCHAIN"/bin/arm-linux-androideabi-clang++
-export AR="$TOOLCHAIN"/bin/arm-linux-androideabi-ar
+export LINK="$TOOLCHAIN"/bin/aarch64-linux-android-clang++
+export AR="$TOOLCHAIN"/bin/aarch64-linux-android-ar
 
-export GYP_DEFINES="target_arch=arm v8_target_arch=arm android_target_arch=arm host_os=$host_os OS=android"
+export GYP_DEFINES="target_arch=arm64 v8_target_arch=arm64 android_target_arch=arm64 host_os=$host_os OS=android"
 
 export npm_config_arch=arm
 export npm_config_platform=android
 export npm_config_format=make-android
-export npm_config_nodedir="$HOME"/projects/mmmmm-mobile/node_modules/nodejs-mobile-react-native/android/libnode/
+export npm_config_nodedir=/home/happy0/nodejs-mobile-android
 export npm_config_node_gyp="$mmmmm"/node_modules/nodejs-mobile-gyp/bin/node-gyp.js
